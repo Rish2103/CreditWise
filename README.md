@@ -4,7 +4,7 @@
 CreditWise is an interactive web application built with **Streamlit** that predicts the likelihood of loan approval based on applicant data. It uses a Machine Learning backend trained on historical loan data to provide real-time predictions.
 
 ## 🚀 Live Demo
-Check out the live app here: [Link to your Streamlit Cloud URL]
+Check out the live app here: (https://creditwise-wqwvctemzjxchyvqpuqfwf.streamlit.app/)
 
 ## 🛠️ Features
 - **Real-time Prediction:** Get instant feedback on loan eligibility.
@@ -17,11 +17,11 @@ Check out the live app here: [Link to your Streamlit Cloud URL]
 - `requirements.txt`: List of dependencies required to run the app.
 - `credit_wise.ipynb`: The original exploratory data analysis and model training notebook.
 
-## 💻 Local Installation
 
-To run this project locally, follow these steps:
+📊 Model Information
+The model currently uses a Logistic Regression classifier (which you can update to KNN or Naive Bayes based on your notebook experiments).
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/credit-wise-app.git](https://github.com/YOUR_USERNAME/credit-wise-app.git)
-   cd credit-wise-app
+Preprocessing: Handles missing values using Mean/Most-Frequent imputation.
+
+Scaling: Uses StandardScaler to ensure all numerical features contribute equally.
+
