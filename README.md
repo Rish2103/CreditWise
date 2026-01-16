@@ -11,6 +11,21 @@ Check out the live app here: (https://creditwise-wqwvctemzjxchyvqpuqfwf.streamli
 - **Interactive UI:** Input fields for income, credit score, debt-to-income ratio, and more.
 - **Data-Driven Logic:** Uses Scikit-Learn for data preprocessing (imputation, encoding, and scaling) and classification.
 
+- ## 📊 Model Performance & Evaluation
+
+After experimenting with multiple algorithms, the **Logistic Regression** model was chosen for the final application due to its high balanced performance.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Logistic Regression** | **88.0%** | **78.5%** | **83.6%** | **81.0%** |
+| Naive Bayes | 86.0% | 81.1% | 70.5% | 75.4% |
+| KNN (n=15) | 77.5% | 70.0% | 45.9% | 55.4% |
+
+### Key Technical Pointers:
+- **Handling Missing Values:** Used `SimpleImputer` with a "mean" strategy for numerical gaps (like Income) and "most_frequent" for categorical gaps (like Gender).
+- **Feature Engineering:** Implemented `OneHotEncoder` for multi-category features and `LabelEncoder` for binary/ordinal features to ensure the model could process the non-numeric data.
+- **Scaling:** Applied `StandardScaler` to normalize feature ranges, which was critical for the performance of the Logistic Regression model.
+
 ## 📁 Project Structure
 - `app.py`: The main Streamlit application script containing both the ML logic and the frontend.
 - `loan_approval_data.csv`: The dataset used to train the model.
